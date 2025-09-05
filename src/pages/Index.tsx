@@ -337,9 +337,9 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: 'Firestone', image: '/src/assets/2.svg' },
-              { name: 'Goodyear', image: '/src/assets/1.svg' },
-              { name: 'Sumitomo', image: '/src/assets/3.svg' },
+              { name: 'Firestone', image: '@/assets/2.svg' },
+              { name: 'Goodyear', image: '@/assets/1.svg' },
+              { name: 'Sumitomo', image: '@/assets/3.svg' },
             ].map((brand, index) => (
               <div
                 key={index}

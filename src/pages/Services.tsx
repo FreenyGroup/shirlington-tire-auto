@@ -21,15 +21,15 @@ import {
 import { Link } from 'react-router-dom';
 
 // Import service images
-import tireSensorImage from '@/assets/services/tire-rotation.svg';
-import alignmentImage from '@/assets/services/wheel-alignment.svg';
-import tireRotationImage from '@/assets/services/tire-sensor.svg';
-import tireRemovalImage from '@/assets/services/tire-removal.svg';
-import tirePatchesImage from '@/assets/services/tire-patches.svg';
-import tirePlugImage from '@/assets/services/tire-plug.svg';
-import tireValveImage from '@/assets/services/tire-valve.svg';
-import tireInstallationImage from '@/assets/services/tire-installation.svg';
-import tireBalancingImage from '@/assets/services/tire-balancing.svg';
+import tireSensorImage from '@/assets/tire-rotation.svg';
+import alignmentImage from '@/assets/wheel-alignment.svg';
+import tireRotationImage from '@/assets/tire-sensor.svg';
+import tireRemovalImage from '@/assets/tire-removal.svg';
+import tirePatchesImage from '@/assets/tire-patches.svg';
+import tirePlugImage from '@/assets/tire-plug.svg';
+import tireValveImage from '@/assets/tire-valve.svg';
+import tireInstallationImage from '@/assets/tire-installation.svg';
+import tireBalancingImage from '@/assets/tire-balancing.svg';
 
 const Services = () => {
   const services = [
