@@ -48,85 +48,107 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                >
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label
+                        htmlFor="firstName"
+                        className="block text-sm font-medium text-foreground mb-2"
+                      >
+                        First Name
+                      </label>
+                      <Input
+                        id="firstName"
+                        name="first-name"
+                        placeholder="John"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="lastName"
+                        className="block text-sm font-medium text-foreground mb-2"
+                      >
+                        Last Name
+                      </label>
+                      <Input
+                        id="lastName"
+                        name="last-name"
+                        placeholder="Doe"
+                      />
+                    </div>
+                  </div>
+
                   <div>
                     <label
-                      htmlFor="firstName"
+                      htmlFor="email"
                       className="block text-sm font-medium text-foreground mb-2"
                     >
-                      First Name
+                      Email
                     </label>
-                    <Input id="firstName" placeholder="John" />
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="john@example.com"
+                    />
                   </div>
+
                   <div>
                     <label
-                      htmlFor="lastName"
+                      htmlFor="phone"
                       className="block text-sm font-medium text-foreground mb-2"
                     >
-                      Last Name
+                      Phone Number
                     </label>
-                    <Input id="lastName" placeholder="Doe" />
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="(555) 123-4567"
+                    />
                   </div>
-                </div>
 
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-foreground mb-2"
+                  <div>
+                    <label
+                      htmlFor="service"
+                      className="block text-sm font-medium text-foreground mb-2"
+                    >
+                      Service Interested In
+                    </label>
+                    <Input
+                      id="service"
+                      name="service"
+                      placeholder="e.g., New tires, Alignment, etc."
+                    />
+                  </div>
+
+                  <div className="pb-5">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-foreground mb-2"
+                    >
+                      Message
+                    </label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      placeholder="Tell us about your tire needs or ask any questions..."
+                      rows={4}
+                    />
+                  </div>
+
+                  <Button
+                    variant="hero"
+                    type="submit"
+                    className="w-full"
                   >
-                    Email
-                  </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="john@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
-                    Phone Number
-                  </label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="service"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
-                    Service Interested In
-                  </label>
-                  <Input
-                    id="service"
-                    placeholder="e.g., New tires, Alignment, etc."
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    placeholder="Tell us about your tire needs or ask any questions..."
-                    rows={4}
-                  />
-                </div>
-
-                <Button variant="hero" className="w-full">
-                  Send Message
-                </Button>
+                    Send Message
+                  </Button>
+                </form>
               </CardContent>
             </Card>
 

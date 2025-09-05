@@ -253,7 +253,7 @@ const Index = () => {
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose ProTire Shop?
+              Why Choose Shirlington Tire & Auto?
             </h2>
             <p className="text-muted-foreground text-lg">
               Professional service backed by quality and reliability
