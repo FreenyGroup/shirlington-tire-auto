@@ -48,11 +48,12 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <form
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-                >
+                <form name="contact" method="post">
+                  <input
+                    type="hidden"
+                    name="form-name"
+                    value="contact"
+                  />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label
