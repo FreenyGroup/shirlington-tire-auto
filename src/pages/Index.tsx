@@ -24,6 +24,15 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroImage from '@/assets/tire-shop-hero-6.svg';
+import newUsedImage from '@/assets/new-tires-service.jpg';
+import rotationImage from '@/assets/tire-rotation-service.jpg';
+import balancingImage from '@/assets/tire-balancing-service.jpg';
+import wheelAlignmentImage from '@/assets/wheel-alignment-service.jpg';
+import tireInspectionImage from '@/assets/tire-patches-service.jpg';
+import emergencyImage from '@/assets/used-tires-service.jpg';
+import firestoneImage from '@/assets/2.svg';
+import goodyearImage from '@/assets/1.svg';
+import sumitomoImage from '@/assets/3.svg';
 
 const Index = () => {
   const features = [
@@ -52,37 +61,37 @@ const Index = () => {
       icon: Wrench,
       title: 'New & Used Tires',
       category: 'Tire Replacement',
-      image: '/src/assets/new-tires-service.jpg',
+      image: newUsedImage,
     },
     {
       icon: RotateCcw,
       title: 'Tire Rotation',
       category: 'Maintenance',
-      image: '/src/assets/tire-rotation-service.jpg',
+      image: rotationImage,
     },
     {
       icon: Scale,
       title: 'Balancing & Patches',
       category: 'Tire Repair',
-      image: '/src/assets/tire-balancing-service.jpg',
+      image: balancingImage,
     },
     {
       icon: Settings,
       title: 'Wheel Alignment',
       category: 'Maintenance',
-      image: '/src/assets/wheel-alignment-service.jpg',
+      image: wheelAlignmentImage,
     },
     {
       icon: Shield,
       title: 'Tire Inspection',
       category: 'Maintenance',
-      image: '/src/assets/tire-patches-service.jpg',
+      image: tireInspectionImage,
     },
     {
       icon: Clock,
       title: 'Emergency Repair',
       category: 'Tire Repair',
-      image: '/src/assets/used-tires-service.jpg',
+      image: emergencyImage,
     },
   ];
 
@@ -337,9 +346,9 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: 'Firestone', image: '@/assets/2.svg' },
-              { name: 'Goodyear', image: '@/assets/1.svg' },
-              { name: 'Sumitomo', image: '@/assets/3.svg' },
+              { name: 'Firestone', image: firestoneImage },
+              { name: 'Goodyear', image: goodyearImage },
+              { name: 'Sumitomo', image: sumitomoImage },
             ].map((brand, index) => (
               <div
                 key={index}
